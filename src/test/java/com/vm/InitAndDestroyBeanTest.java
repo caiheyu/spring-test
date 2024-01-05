@@ -1,10 +1,12 @@
 package com.vm;
 
+import com.vm.config.SpringConfig;
 import com.vm.pojo.InitAndDestroyBean2;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -17,8 +19,8 @@ public class InitAndDestroyBeanTest {
     public static ApplicationContext app;
     @BeforeClass
     public static void before(){
-//        app = new AnnotationConfigApplicationContext(SpringConfig.class);
-        app = new ClassPathXmlApplicationContext("spring.xml");
+        app = new AnnotationConfigApplicationContext(SpringConfig.class);
+//        app = new ClassPathXmlApplicationContext("spring.xml");
     }
     @AfterClass
     public static void after(){

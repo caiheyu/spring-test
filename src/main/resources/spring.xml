@@ -6,5 +6,7 @@
                             http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <context:component-scan base-package="com.vm"/>
 
+    <bean id="initAndDestroyBean3" class="com.vm.pojo.InitAndDestroyBean3" init-method="initMethod" destroy-method="destoryMethod"/>
+    <bean id="initAndDestroyBean4" class="com.vm.pojo.InitAndDestroyBean4" init-method="initMethod2" destroy-method="destoryMethod2"/>
 
 </beans>

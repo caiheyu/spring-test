@@ -10,15 +10,12 @@ import javax.annotation.PreDestroy;
  * @date 2024年01月04日 11:50
  * @description
  */
-//@Component
-public class InitAndDestroyBean2 {
-    @PostConstruct
+public class InitAndDestroyBean3 {
     public void initMethod(){
-        System.out.println("InitAndDestroyBean2初始化...");
+        System.out.println("InitAndDestroyBean3初始化...");
     }
 
-    @PreDestroy
     public void destoryMethod(){
-        System.out.println("InitAndDestroyBean2销毁...");
+        System.out.println("InitAndDestroyBean3销毁...");
     }
 }
